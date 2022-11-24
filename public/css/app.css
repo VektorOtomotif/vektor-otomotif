@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F4F5;
+}
+section {
+    position: relative;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0B0B0B;
+    transition-duration: .2s;
+}
+.btn {
+    padding: .5rem 1rem;
+}
+.bg-green {
+    background-color: #0E9E2C;
+}
+.bg-green {
+    background-color: #0E9E2C;
+}
+.btn-green {
+    background-color: #0E9E2C;
+    color: white;
+    transition-duration: .2s;
+}
+.btn-green:hover {
+    background-color: #0a5f1c;
+    color: white;
+}
+.btn-outline-green {
+    --bs-btn-color: #000;
+    --bs-btn-border-color: #0E9E2C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0E9E2C;
+    --bs-btn-hover-border-color: #0E9E2C;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0E9E2C;
+    --bs-btn-active-border-color: #0E9E2C;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0E9E2C;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0E9E2C;
+    --bs-gradient: none;
+}
+.green{
+    color: #0E9E2C;
+}
+.black {
+    color: black;
+}
+.white {
+    color: white;
+}
+.bg-lighter {
+    background-color: #F2F4F5;
+}
+.shadow-md {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Background Image */
+.bg-landingpage {
+    background: url(../images/ui/landingpage-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 25% 0;
+}
+
+.radius-bottom-bg{
+    border-radius: 0 0 4rem 4rem;
+}
+
+@media (max-width: 768px) {
+    .bg-bergabung {
+        background: url(../images/ui/gabung.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg-bergabung ~ div {
+        padding-right: 0;
+    }
+    .bg-bergabung .green {
+        color: white;
+        text-align: center;
+    }
+}

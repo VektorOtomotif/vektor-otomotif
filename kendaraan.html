@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ORTO - Pilih Kendaraan</title>
+    <link rel="icon" href="./public/images/logo/orto-square.png" type="image/icon type">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.theme.default.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/library/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-sm.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-md.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-lg.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xl.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xxl.min.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-green shadow-md">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img src="./public/images/logo/orto.png" alt="ORTO - Logo"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="./kendaraan.html">Servis Sekarang</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-sm-5">
+                        <a class="nav-link fw-semibold" href="#">Mitra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">Masuk Sekarang</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <section>
+        <form action="">
+            <div class="container padding-y-10">
+                <h1 class="text-center fontw-6 margin-bottom-8">Mau Servis Apa?</h1>
+                <h2 class="fontw-6 margin-bottom-8">Pilih Kendaraanmu</h2>
+                <div class="d-flex flex-column flex-sm-row justify-content-center margin-bottom-10">
+                        <input type="radio" class="btn-check" name="kendaraan" id="motor" autocomplete="off" checked>
+                        <label class="btn btn-outline-green margin-bottom-8 mb-sm-0 margin-sm-right-12 margin-lg-right-20" for="motor">
+                            <img src="./public/images/ui/Motorcycle.png" alt="Motor" class="ratio ratio-1x1 width-20">
+                        </label>
+                        
+                        <input type="radio" class="btn-check" name="kendaraan" id="mobil" autocomplete="off">
+                        <label class="btn btn-outline-green" for="mobil">
+                            <img src="./public/images/ui/Car.png" alt="Motor" class="ratio ratio-1x1 width-20">
+                        </label>
+                </div>
+
+                <!-- Form -->
+                <div class="width-38p width-sm-30p width-md-40p width-lg-30p mx-auto margin-bottom-8">
+                    <div class="mb-3">
+                        <label for="merk" class="form-label">Merk Kendaraan</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Merk Kendaraan Anda</option>
+                            <option value="1">Honda</option>
+                            <option value="2">Yamaha</option>
+                            <option value="3">Suzuki</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipe" class="form-label">Tipe Kendaraan</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Tipe Kendaraan Anda</option>
+                            <option value="1">Supra GTR</option>
+                            <option value="2">MX King</option>
+                            <option value="3">Satria</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tahun" class="form-label">Tahun Kendaraan</label>
+                        <input type="number" class="form-control" id="tahun" placeholder="Masukkan Tahun Kendaraan Anda">
+                    </div>
+                    <div class="">
+                        <label for="latest" class="form-label">Terakhir Kali Servis</label>
+                        <input type="date" class="form-control" id="latest">
+                    </div>
+                </div>
+
+                <!-- Keluhan -->
+                <h2 class="fontw-6 margin-bottom-8">Keluhan Yang Dialami</h2>
+                <div class="row justify-content-center g-3">
+                    <div class="col-12 col-sm-6  col-lg-4">
+                        <input type="checkbox" class="btn-check" id="berkala" autocomplete="off">
+                        <label class="btn btn-outline-green p-0" for="berkala">
+                            <img src="./public/images/ui/berkala.png" alt="Servis Rutin" class="width-40p">
+                            <h5 class="fontw-6 my-2">
+                                Servis Rutin
+                            </h5>
+                        </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <input type="checkbox" class="btn-check" id="elektrik" autocomplete="off">
+                        <label class="btn btn-outline-green p-0" for="elektrik">
+                            <img src="./public/images/ui/elektrik.png" alt="Servis Elektrik" class="width-40p">
+                            <h5 class="fontw-6 my-2">
+                                Elektrik
+                            </h5>
+                        </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <input type="checkbox" class="btn-check" id="oli" autocomplete="off">
+                        <label class="btn btn-outline-green p-0" for="oli">
+                            <img src="./public/images/ui/oli.png" alt="Ganti Oli" class="width-40p">
+                            <h5 class="fontw-6 my-2">
+                                Oli
+                            </h5>
+                        </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <input type="checkbox" class="btn-check" id="kaki-kaki" autocomplete="off">
+                        <label class="btn btn-outline-green p-0" for="kaki-kaki">
+                            <img src="./public/images/ui/kaki-kaki.png" alt="Servis Rutin" class="width-40p">
+                            <h5 class="fontw-6 my-2">
+                                Kaki - Kaki
+                            </h5>
+                        </label>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <input type="checkbox" class="btn-check" id="mesin" autocomplete="off">
+                        <label class="btn btn-outline-green p-0" for="mesin">
+                            <img src="./public/images/ui/mesin.png" alt="Servis Rutin" class="width-40p">
+                            <h5 class="fontw-6 my-2">
+                                Mesin
+                            </h5>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-end margin-top-8">
+                    <button type="submit" class="btn btn-green rounded-pill">
+                        Selanjutnya <i class="bi bi-arrow-right margin-left-1"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green">
+        <div class="container padding-y-10">
+            <img src="./public/images/logo/orto.png" alt="" class="width-8vh margin-bottom-4">
+            <div class="row gx-4 gy-5 justify-content-between white text-center text-sm-start">
+                <div class="col-12 col-lg-3">
+                    <h3 class="fontw-6 margin-bottom-6">Head Office</h3>
+                    <p>Jl. Pangkal Perjuangan, RT.05/RW.04, Tanjungpura, Kec. Karawang Bar., Karawang, Jawa Barat 41316</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h3 class="fontw-6 margin-bottom-6">Produk</h3>
+                    <div class="d-flex flex-column">
+                        <a href="" class="margin-bottom-2">Booking Bengkel</a>
+                        <a href="">Servis Di Rumah</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h3 class="fontw-6 margin-bottom-6">Gabung</h3>
+                    <div class="d-flex flex-column">
+                        <a href="" class="margin-bottom-2">Daftar Sekarang</a>
+                        <a href="">Mitra Bengkel</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h3 class="fontw-6 margin-bottom-6">Tim Kami</h3>
+                    <div class="d-flex flex-column">
+                        <a href="" class="margin-bottom-2">Cara Daftar</a>
+                        <a href="" class="margin-bottom-2">Tentang Kami</a>
+                        <a href="">Kontak Kami</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <h3 class="fontw-6 margin-bottom-6">Ikuti Kami</h3>
+                    <a href="" class="fonts-10">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="" class="fonts-10 margin-x-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="" class="fonts-10">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p class="white fontw-6 mb-0">Dibuat Oleh Tim ORTO</p>
+        </div>
+    </footer>
+    
+    <!-- Script -->
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/jquery/jquery-3.6.1.js"></script>
+    <script src="./public/js/jquery/jquery.mousewheel.js"></script>
+    <script src="./public/js/owlcarousel/owl.carousel.js"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+</html>
