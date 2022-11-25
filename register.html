@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ORTO - Login</title>
+    <title>ORTO - Daftar</title>
     <link rel="icon" href="./public/images/logo/orto-square.png" type="image/icon type">
 
     <!-- Font -->
@@ -36,10 +36,14 @@
 
     <!-- Login -->
     <section class="bg-green">
-        <div class="container d-flex flex-column flex-lg-row-reverse align-items-center padding-top-12 width-sm-36p width-md-30p width-lg-40p mx-auto login">
+        <div class="container d-flex flex-column flex-lg-row-reverse align-items-center width-sm-36p width-md-30p width-lg-40p mx-auto login padding-y-10">
             <div class="width-38p with-lg-20p mx-auto">
                 <div class="bg-white rounded-3 padding-x-8 padding-y-4">
-                    <h1 class="text-center fontw-6 margin-bottom-4">Masuk</h1>
+                    <h1 class="text-center fontw-6 margin-bottom-4">Daftar</h1>
+                    <div class="margin-bottom-4">
+                        <label for="name" class="form-label fontw-6">Nama</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan Nama">
+                    </div>
                     <div class="margin-bottom-4">
                         <label for="email" class="form-label fontw-6">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="orto@gmail.com">
@@ -47,6 +51,14 @@
                     <div class="margin-bottom-4">
                         <label for="password" class="form-label fontw-6">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="orto@gmail.com">
+                    </div>
+                    <div class="margin-bottom-4">
+                        <label for="confpassword" class="form-label fontw-6">Konfirmasi Password</label>
+                        <input type="password" class="form-control" id="confpassword" placeholder="orto@gmail.com">
+                    </div>
+                    <div class="margin-bottom-4">
+                        <label for="alamat" class="form-label fontw-6">Alamat</label>
+                        <textarea class="form-control" id="alamat" rows="2"></textarea>
                     </div>
                     <div class="d-flex flex-column-reverse flex-lg-row justify-content-between margin-bottom-4">
                         <small class="mb-0">
@@ -63,7 +75,7 @@
             </div>
     
             <!-- Illustration -->
-            <div class="width-36p with-lg-20p mx-auto margin-top-12">
+            <div class="width-36p with-lg-20p mx-auto margin-top-12 d-none d-lg-inline-block">
                 <img src="./public/images/ui/login.png" alt="" class="width-34p width-lg-28p">
             </div>
         </div>
