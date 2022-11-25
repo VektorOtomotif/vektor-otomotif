@@ -90,6 +90,10 @@ footer a:hover {
     border-radius: 0 0 4rem 4rem;
 }
 
+.login {
+    min-height: 100vh;
+}
+
 @media (max-width: 768px) {
     .bg-bergabung {
         background: url(../images/ui/gabung.png);
