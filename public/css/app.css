@@ -5,6 +5,13 @@ body {
 section {
     position: relative;
 }
+a {
+    color: black;
+    transition-duration: 0.2s;
+}
+a:hover {
+    color: #0E9E2C;
+}
 footer a {
     color: white;
     text-decoration: none;
@@ -55,6 +62,13 @@ footer a:hover {
 }
 .white {
     color: white;
+}
+.black {
+    color: black;
+}
+.link-reset {
+    text-decoration: none;
+    color: black;
 }
 .bg-lighter {
     background-color: #F2F4F5;
