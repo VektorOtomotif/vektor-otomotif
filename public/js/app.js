@@ -12,6 +12,7 @@ $(document).ready(function(){
                 items:2
             },
             992:{
+                nav:true,
                 items:3
             },
             1400:{
