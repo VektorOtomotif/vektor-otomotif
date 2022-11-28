@@ -23,6 +23,9 @@ footer a:hover {
 .btn {
     padding: .5rem 1rem;
 }
+.bg-none {
+    background: none;
+}
 .bg-green {
     background-color: #0E9E2C;
 }
