@@ -38,13 +38,13 @@ $(document).ready(function(){
     // Password Visibility
     $("body").on('click', '.toggle-password', function() {
         $(this).toggleClass("bi-eye bi-eye-slash");
-        var input = $("#password");
+        let input = $("#password");
         console.log(input)
         input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
     });
     $("body").on('click', '.toggle-confpassword', function() {
         $(this).toggleClass("bi-eye bi-eye-slash");
-        var input = $("#confpassword");
+        let input = $("#confpassword");
         console.log(input)
         input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
     });
