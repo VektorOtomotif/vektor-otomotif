@@ -1,3 +1,9 @@
+// Import Navbar
+$(function(){
+    $("#navbar").load("../../module/navbar.html"); 
+    $("#footer").load("../../module/footer.html"); 
+});
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop:true,
