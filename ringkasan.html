@@ -82,10 +82,184 @@
 
     <!-- Jadwal -->
     <section class="bg-green ">
-        <div class="container margin-top-5 white">
-            <h1 class="fontw-6 text-center">Jadwal Pemesanan</h1>
+        <div class="container margin-top-5 white padding-y-5">
+            <h1 class="fontw-6 text-center margin-bottom-4">Jadwal Pemesanan</h1>
+            <div class="d-flex justify-content-center">
+                <div class="bg-white green rounded-2 padding-4 text-center shadow-md margin-right-4 margin-sm-right-6 margin-lg-right-12 margin-xl-right-16 margin-xxl-right-20">
+                    <h2 class="fontw-6 margin-bottom-1">Waktu</h2>
+                    <p class="fontw-6 fonts-8 border-top border-success margin-bottom-1">15:00</p>
+                </div>
+                <div class="bg-white green rounded-2 padding-4 text-center shadow-md">
+                    <h2 class="fontw-6 margin-bottom-1">Tanggal</h2>
+                    <p class="fontw-6 fonts-8 border-top border-success margin-bottom-1">27/11/2022</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section>
+        <div class="container margin-top-15">
+            <!-- Form -->
+            <div class="width-38p width-sm-30p width-md-40p width-lg-30p mx-auto margin-bottom-8">
+                <div class="mb-3">
+                    <label for="merk" class="form-label">Merk Kendaraan</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pilih Merk Kendaraan Anda</option>
+                        <option value="1">Honda</option>
+                        <option value="2">Yamaha</option>
+                        <option value="3">Suzuki</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tipe" class="form-label">Tipe Kendaraan</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pilih Tipe Kendaraan Anda</option>
+                        <option value="1">Supra GTR</option>
+                        <option value="2">MX King</option>
+                        <option value="3">Satria</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tahun" class="form-label">Tahun Kendaraan</label>
+                    <input type="number" class="form-control" id="tahun" placeholder="Masukkan Tahun Kendaraan Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="latest" class="form-label">Terakhir Kali Servis</label>
+                    <input type="date" class="form-control" id="latest">
+                </div>
+                <div class="mb-3">
+                    <label for="order" class="form-label">Pesan Servis Untuk</label>
+                    <div class="row margin-x-1 mb-sm-0 g-2">
+                        <div class="col-12 col-md-6">
+                            <input type="time" class="form-control" id="order">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="date" class="form-control" id="latest">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container margin-top-10 bg-white rounded-3 padding-y-2">
+            <!-- Keluhan -->
+            <section>
+                <div class="container margin-top-5 border-bottom">
+                    <h1 class="fontw-6 margin-bottom-2">Bengkel Neskar</h1>
+                    <h2 class="fontw-6 margin-bottom-2">Estimasi Biaya :</h2>
+                    <div class="margin-bottom-2">
+                        <label for="keluhan" class="form-label fontw-6 fonts-4">Keluhan</label>
+                        <input type="text" class="form-control" id="keluhan" placeholder="Keluhan Anda" value="Penggantian Oli">
+                    </div>
+                    <div class="margin-bottom-5">
+                        <label for="detilkeluhan" class="form-label fontw-6 fonts-4">Detail keluhan</label>
+                        <textarea class="form-control height-24" placeholder="Detil keluhan anda" id="detilkeluhan">Penggantian Oli dengan spesifikasi 10w - 40</textarea>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Barang -->
+            <section>
+                <div class="container margin-top-5 border-bottom">
+                    <div class="row position-relative overflow-x-hidden width-40p margin-bottom-4 margin-lg-bottom-8">
+                        <div class="col-4 col-md-3 col-lg-2 ">
+                            <img src="./public/images/ui/oil.jpg" alt="" class="width-40p ratio ratio-1x1">
+                        </div>
+                        <div class="col-8 col-md-7 col-lg-10">
+                            <h6 class="margin-bottom-1 fontw-6 fonts-4 fonts-sm-5">Oli Motor Oil</h6>
+                            <p class="margin-bottom-1 margin-lg-bottom-2 margin-xxl-bottom-4">Motor Oil Power Scooter 10w - 40</p>
+                            <p class="mb-0 fontw-6">Rp. 45.000</p>
+                        </div>
+                        <div class="position-absolute col-sm-12 translate-middle start-40p top-0 width-12 ratio ratio-1x1">
+                            <input type="text" class="green fontw-7 fonts-4 fonts-md-6 fonts-lg-8 bg-none border-0 text-center mx-auto padding-0" value="1">
+                        </div>
+                    </div>
+                    <div class="row position-relative overflow-x-hidden width-40p margin-bottom-4 margin-lg-bottom-8">
+                        <div class="col-4 col-md-3 col-lg-2 ">
+                            <img src="./public/images/ui/oil.jpg" alt="" class="width-40p ratio ratio-1x1">
+                        </div>
+                        <div class="col-8 col-md-7 col-lg-10">
+                            <h6 class="margin-bottom-1 fontw-6 fonts-4 fonts-sm-5">Oli Motor Oil</h6>
+                            <p class="margin-bottom-1 margin-lg-bottom-2 margin-xxl-bottom-4">Motor Oil Power Scooter 10w - 40</p>
+                            <p class="mb-0 fontw-6">Rp. 45.000</p>
+                        </div>
+                        <div class="position-absolute col-sm-12 translate-middle start-40p top-0 width-12 ratio ratio-1x1">
+                            <input type="text" class="green fontw-7 fonts-4 fonts-md-6 fonts-lg-8 bg-none border-0 text-center mx-auto padding-0" value="1">
+                        </div>
+                    </div>
+                    <div class="row position-relative overflow-x-hidden width-40p margin-bottom-4 margin-lg-bottom-8">
+                        <div class="col-4 col-md-3 col-lg-2 ">
+                            <img src="./public/images/ui/oil.jpg" alt="" class="width-40p ratio ratio-1x1">
+                        </div>
+                        <div class="col-8 col-md-7 col-lg-10">
+                            <h6 class="margin-bottom-1 fontw-6 fonts-4 fonts-sm-5">Oli Motor Oil</h6>
+                            <p class="margin-bottom-1 margin-lg-bottom-2 margin-xxl-bottom-4">Motor Oil Power Scooter 10w - 40</p>
+                            <p class="mb-0 fontw-6">Rp. 45.000</p>
+                        </div>
+                        <div class="position-absolute col-sm-12 translate-middle start-40p top-0 width-12 ratio ratio-1x1">
+                            <input type="text" class="green fontw-7 fonts-4 fonts-md-6 fonts-lg-8 bg-none border-0 text-center mx-auto padding-0" value="1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Estimasi -->
+            <section>
+                <div class="container margin-top-5 border-bottom">
+                    <div class="row margin-bottom-2">
+                        <div class="col-8">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Oli Motor Oil</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 30.000</p>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-2">
+                        <div class="col-8">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Oli Motor Oil</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 30.000</p>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-2">
+                        <div class="col-8">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Oli Motor Oil</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 30.000</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <div class="container margin-top-5 margin-bottom-10">
+                    <div class="row margin-bottom-2">
+                        <div class="col-8">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Metode Pembayaran</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Bayar Ditempat</p>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-6">
+                        <div class="col-8">
+                            <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Estimasi Biaya :</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="fontw-7 fonts-5 fonts-md-6 fonts-xl-7 mb-0 green">Rp. 70.000</p>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+        </div>
+
+    </section>
+    <div class="d-flex justify-content-end container margin-top-5 margin-bottom-10">
+        <a href="./" class="btn btn-green rounded-pill width-15p width-sm-10p width-md-7p width-lg-6p fontw-6"><i class="bi bi-house-door-fill margin-right-1 margin-md-right-2"></i>Beranda</a>
+    </div>
 
     <!-- Footer -->
     <section id="footer"></section>
