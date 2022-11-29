@@ -38,30 +38,32 @@
     <section class="bg-green">
         <div class="container d-flex flex-column flex-lg-row-reverse align-items-center padding-top-12 width-sm-36p width-md-30p width-lg-40p mx-auto login">
             <div class="width-38p with-lg-20p mx-auto">
-                <div class="bg-white rounded-3 padding-x-8 padding-y-4">
-                    <h1 class="text-center fontw-6 margin-bottom-4">Masuk</h1>
-                    <div class="margin-bottom-4">
-                        <label for="email" class="form-label fontw-6">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="orto@gmail.com">
+                <form action="./">
+                    <div class="bg-white rounded-3 padding-x-8 padding-y-4">
+                        <h1 class="text-center fontw-6 margin-bottom-4">Masuk</h1>
+                        <div class="margin-bottom-4">
+                            <label for="email" class="form-label fontw-6">Email</label>
+                            <input required type="email" class="form-control" id="email" placeholder="orto@gmail.com">
+                        </div>
+                        <label for="password" class="form-label fontw-6">Password</label>
+                        <div class="input-group border rounded-3 margin-bottom-4">
+                            <input required type="password" class="form-control border-0" placeholder="Masukkan Password" aria-label="password"
+                                id="password" aria-describedby="pass">
+                            <span class="input-group-text bg-white border-0" id="pass"><i class="toggle-password bi bi-eye"></i></span>
+                        </div>
+                        <div class="d-flex flex-column-reverse flex-lg-row justify-content-between margin-bottom-4">
+                            <small class="mb-0">
+                                Belum punya akun? <a href="/register.html">Daftar Sekarang</a>
+                            </small>
+                            <small class="mb-0">
+                                <a href="/development.html" class="mb-0">Lupa Password</a>
+                            </small>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-green rounded-pill width-40p width-lg-14p">Masuk</button>
+                        </div>
                     </div>
-                    <label for="password" class="form-label fontw-6">Password</label>
-                    <div class="input-group border rounded-3 margin-bottom-4">
-                        <input type="password" class="form-control border-0" placeholder="Masukkan Password" aria-label="password"
-                            id="password" aria-describedby="pass">
-                        <span class="input-group-text bg-white border-0" id="pass"><i class="toggle-password bi bi-eye"></i></span>
-                    </div>
-                    <div class="d-flex flex-column-reverse flex-lg-row justify-content-between margin-bottom-4">
-                        <small class="mb-0">
-                            Belum punya akun? <a href="">Daftar Sekarang</a>
-                        </small>
-                        <small class="mb-0">
-                            <a href="" class="mb-0">Lupa Password</a>
-                        </small>
-                    </div>
-                    <div class="text-end">
-                        <button type="submit" class="btn btn-green rounded-pill width-40p width-lg-14p">Masuk</button>
-                    </div>
-                </div>
+                </form>
             </div>
     
             <!-- Illustration -->

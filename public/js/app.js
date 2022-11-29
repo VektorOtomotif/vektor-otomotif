@@ -1,6 +1,7 @@
 // Import Navbar
 $(function(){
-    $("#navbar").load("../../module/navbar.html"); 
+    $("#navbar").load("../../module/navbar.html");
+    $("#navbar-servis").load("../../module/navbar-servis.html");
     $("#footer").load("../../module/footer.html"); 
 });
 
