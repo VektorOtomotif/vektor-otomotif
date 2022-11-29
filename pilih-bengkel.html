@@ -34,7 +34,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <section class="sticky-top" id="navbar">              
+    <section class="sticky-top" id="navbar-servis">              
     </section>
 
     <!-- Header -->
@@ -53,17 +53,15 @@
                     <div class="col-6">
                         <select class="form-select rounded-pill border-success" aria-label="Filter Bengkel">
                             <option selected>Filter</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="rating">Rating</option>
+                            <option value="ulasan">Ulasan</option>
                         </select>
                     </div>
                     <div class="col-6">
                         <select class="form-select rounded-pill border-success" aria-label="Urutkan Bengkel">
                             <option selected>Urutkan</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="upper">Tertinggi</option>
+                            <option value="lower">Terendah</option>
                         </select>
                     </div>
                 </div>
@@ -73,141 +71,56 @@
 
     <!-- Body -->
     <section>
-        <div class="container padding-y-10">
-            <h2 class="fontw-6 margin-bottom-4 text-start text-sm-center">Bengkel Terdekat</h2>
-            <div class="d-flex flex-column justify-content-around">
-                <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
-                    <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
-                        <img src="./public/images/ui/kaki-kaki.png" alt="" class="width-40p">
-                    </div>
-                    <div class="col-12 col-lg-6 col-xl-8">
-                        <div class="width-40p padding-x-6 px-lg-0">
-                            <h3 class="fontw-6 margin-bottom-1">Bengkel Neskar</h3>
-                            <div class="d-flex">
-                                <div class="margin-right-6">
-                                    <i class="bi bi-star-fill margin-right-2"></i>3.5
-                                </div>
-                                <div>
-                                    <a href="" class="text-decoration-none black">6 Ulasan</a>
-                                </div>
-                            </div>
-                            <p>Bengkel Sepeda Motor</p>
-                            <div class="row align-items-center margin-bottom-1">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-geo-alt-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        Jalan Bobojong, Purwadana, Telukjambe Timur, Purwadana, Telukjambe Timur, Karawang, Jawa Barat 41361
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-telephone-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        081234567890
-                                    </p>
-                                </div>
-                            </div>
-                            
+        <form action="./detil-bengkel.html">
+            <div class="container padding-y-10">
+                <h2 class="fontw-6 margin-bottom-4 text-start text-sm-center">Bengkel Terdekat</h2>
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
+                        <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
+                            <img src="./public/images/ui/kaki-kaki.png" alt="" class="width-40p">
                         </div>
-                        <div class="width-40p text-center text-lg-end margin-bottom-3">
-                            <a href="" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
-                    <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
-                        <img src="./public/images/ui/kaki-kaki.png" alt="" class="width-40p">
-                    </div>
-                    <div class="col-12 col-lg-6 col-xl-8">
-                        <div class="width-40p padding-x-6 px-lg-0">
-                            <h3 class="fontw-6 margin-bottom-1">Bengkel Neskar</h3>
-                            <div class="d-flex">
-                                <div class="margin-right-6">
-                                    <i class="bi bi-star-fill margin-right-2"></i>3.5
+                        <div class="col-12 col-lg-6 col-xl-8">
+                            <div class="width-40p padding-x-6 px-lg-0">
+                                <h3 class="fontw-6 margin-bottom-1">Bengkel Neskar</h3>
+                                <div class="d-flex">
+                                    <div class="margin-right-6">
+                                        <i class="bi bi-star-fill margin-right-2"></i>3.5
+                                    </div>
+                                    <div>
+                                        <a href="" class="text-decoration-none black">6 Ulasan</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href="" class="text-decoration-none black">6 Ulasan</a>
+                                <p>Bengkel Sepeda Motor</p>
+                                <div class="row align-items-center margin-bottom-1">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-geo-alt-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            Jalan Bobojong, Purwadana, Telukjambe Timur, Purwadana, Telukjambe Timur, Karawang, Jawa Barat 41361
+                                        </p>
+                                    </div>
                                 </div>
+                                <div class="row align-items-center">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-telephone-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            081234567890
+                                        </p>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <p>Bengkel Sepeda Motor</p>
-                            <div class="row align-items-center margin-bottom-1">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-geo-alt-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        Jalan Bobojong, Purwadana, Telukjambe Timur, Purwadana, Telukjambe Timur, Karawang, Jawa Barat 41361
-                                    </p>
-                                </div>
+                            <div class="width-40p text-center text-lg-end margin-bottom-3">
+                                <button type="submit" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</button>
                             </div>
-                            <div class="row align-items-center">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-telephone-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        081234567890
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="width-40p text-center text-lg-end margin-bottom-3">
-                            <a href="" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</a>
                         </div>
                     </div>
                 </div>
-                <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
-                    <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
-                        <img src="./public/images/ui/kaki-kaki.png" alt="" class="width-40p">
-                    </div>
-                    <div class="col-12 col-lg-6 col-xl-8">
-                        <div class="width-40p padding-x-6 px-lg-0">
-                            <h3 class="fontw-6 margin-bottom-1">Bengkel Neskar</h3>
-                            <div class="d-flex">
-                                <div class="margin-right-6">
-                                    <i class="bi bi-star-fill margin-right-2"></i>3.5
-                                </div>
-                                <div>
-                                    <a href="" class="text-decoration-none black">6 Ulasan</a>
-                                </div>
-                            </div>
-                            <p>Bengkel Sepeda Motor</p>
-                            <div class="row align-items-center margin-bottom-1">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-geo-alt-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        Jalan Bobojong, Purwadana, Telukjambe Timur, Purwadana, Telukjambe Timur, Karawang, Jawa Barat 41361
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-2 col-xl-1 text-center">
-                                    <i class="bi bi-telephone-fill fonts-8"></i>
-                                </div>
-                                <div class="col-10 col-xl-11">
-                                    <p class="mb-0">
-                                        081234567890
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="width-40p text-center text-lg-end margin-bottom-3">
-                            <a href="" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </form>
     </section>
 
 
