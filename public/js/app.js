@@ -2,6 +2,7 @@
 $(function(){
     $("#navbar").load("../../module/navbar.html");
     $("#navbar-servis").load("../../module/navbar-servis.html");
+    $("#navbar-order").load("../../module/navbar-order.html");
     $("#footer").load("../../module/footer.html"); 
 });
 

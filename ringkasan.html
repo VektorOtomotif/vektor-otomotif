@@ -34,7 +34,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <section class="sticky-top" id="navbar-servis">              
+    <section class="sticky-top" id="navbar-order">              
     </section>
 
     <!-- Bengkel -->
@@ -104,37 +104,38 @@
                 <div class="mb-3">
                     <label for="merk" class="form-label">Merk Kendaraan</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Pilih Merk Kendaraan Anda</option>
-                        <option value="1">Honda</option>
-                        <option value="2">Yamaha</option>
-                        <option value="3">Suzuki</option>
+                        <option >Pilih Merk Kendaraan Anda</option>
+                        <option value="honda" selected>Honda</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="kawasaki">Kawasaki</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="tipe" class="form-label">Tipe Kendaraan</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Pilih Tipe Kendaraan Anda</option>
-                        <option value="1">Supra GTR</option>
+                        <option>Pilih Tipe Kendaraan Anda</option>
+                        <option value="1" selected>Supra GTR</option>
                         <option value="2">MX King</option>
                         <option value="3">Satria</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="tahun" class="form-label">Tahun Kendaraan</label>
-                    <input type="number" class="form-control" id="tahun" placeholder="Masukkan Tahun Kendaraan Anda">
+                    <input type="number" class="form-control" id="tahun" placeholder="Masukkan Tahun Kendaraan Anda" value="2022">
                 </div>
                 <div class="mb-3">
                     <label for="latest" class="form-label">Terakhir Kali Servis</label>
-                    <input type="date" class="form-control" id="latest">
+                    <input type="date" class="form-control" id="latest" value="2022-11-11">
                 </div>
                 <div class="mb-3">
                     <label for="order" class="form-label">Pesan Servis Untuk</label>
                     <div class="row margin-x-1 mb-sm-0 g-2">
                         <div class="col-12 col-md-6">
-                            <input type="time" class="form-control" id="order">
+                            <input type="time" class="form-control" id="order" value="13:00">
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="date" class="form-control" id="latest">
+                            <input type="date" class="form-control" id="latest" value="2022-12-02">
                         </div>
                     </div>
                 </div>
