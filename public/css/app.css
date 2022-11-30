@@ -97,6 +97,10 @@ footer a:hover {
     min-height: 100vh;
 }
 
+.btn.btn-outline-green:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
 @media (max-width: 768px) {
     .bg-bergabung {
         background: url(../images/ui/gabung.png);
