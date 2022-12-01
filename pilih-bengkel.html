@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ORTO - Pilih Bengkel</title>
+    <link rel="icon" href="./public/images/logo/orto-square.png" type="image/icon type">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.theme.default.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/library/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-sm.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-md.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-lg.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xl.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xxl.min.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="sticky-top" id="navbar-servis">              
+    </section>
+
+    <!-- Header -->
+    <section>
+        <div class="container padding-y-10">
+            <!-- Search -->
+            <div class="width-40p width-lg-30p width-xl-25p width-xxl-20p mx-auto">
+                <div class="input-group border border-success rounded-pill overflow-hidden margin-bottom-4">
+                    <div class="form-floating border-0">
+                        <input type="text" class="form-control border-0" id="floatingInputGroup1" placeholder="Username">
+                        <label for="floatingInputGroup1 border-0">Search</label>
+                    </div>
+                    <span class="input-group-text bg-white border-0 padding-right-6"><i class="bi bi-search"></i></span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <select class="form-select rounded-pill border-success" aria-label="Filter Bengkel">
+                            <option selected>Filter</option>
+                            <option value="rating">Rating</option>
+                            <option value="ulasan">Ulasan</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select rounded-pill border-success" aria-label="Urutkan Bengkel">
+                            <option selected>Urutkan</option>
+                            <option value="upper">Tertinggi</option>
+                            <option value="lower">Terendah</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body -->
+    <section>
+        <form action="./detil-bengkel.html">
+            <div class="container padding-y-10">
+                <h2 class="fontw-6 margin-bottom-4 text-start text-sm-center">Bengkel Terdekat</h2>
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
+                        <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
+                            <img src="./public/images/ui/bengkel-neskar-landscape.jpeg" alt="" class="width-40p">
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-8">
+                            <div class="width-40p padding-x-6 px-lg-0">
+                                <h3 class="fontw-6 margin-bottom-1">Bengkel Motor Neskar</h3>
+                                <div class="d-flex">
+                                    <div class="margin-right-6">
+                                        <i class="bi bi-star-fill margin-right-2"></i>4.8
+                                    </div>
+                                    <div>
+                                        <a href="" class="text-decoration-none black">12 Ulasan</a>
+                                    </div>
+                                </div>
+                                <p>Bengkel Sepeda Motor</p>
+                                <div class="row align-items-center margin-bottom-1">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-geo-alt-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            Jl. Pangkal Perjuangan, RT.05/RW.04, Tanjungpura, Kec. Karawang Bar., Karawang, Jawa Barat 41316
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-telephone-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            0811-1180-308
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="width-40p text-center text-lg-end margin-bottom-3">
+                                <button type="submit" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
+                        <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
+                            <img src="./public/images/ui/ts-motor.jpg" alt="" class="width-40p">
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-8">
+                            <div class="width-40p padding-x-6 px-lg-0">
+                                <h3 class="fontw-6 margin-bottom-1">Bengkel TS Motor</h3>
+                                <div class="d-flex">
+                                    <div class="margin-right-6">
+                                        <i class="bi bi-star-fill margin-right-2"></i>4.4
+                                    </div>
+                                    <div>
+                                        <a href="" class="text-decoration-none black">8 Ulasan</a>
+                                    </div>
+                                </div>
+                                <p>Bengkel Sepeda Motor</p>
+                                <div class="row align-items-center margin-bottom-1">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-geo-alt-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            Jl. Rhs Saca Kusumah, Karangpawitan, Kec. Karawang Bar., Karawang, Jawa Barat 41311
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-telephone-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            0852-1303-4786
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="width-40p text-center text-lg-end margin-bottom-3">
+                                <button type="submit" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row width-sm-30vw width-lg-40p shadow-md margin-bottom-6 mx-auto">
+                        <div class="col-12 col-lg-6 col-xl-4 margin-bottom-2 mb-lg-0">
+                            <img src="./public/images/ui/yamaha.jpg" alt="" class="width-40p">
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-8">
+                            <div class="width-40p padding-x-6 px-lg-0">
+                                <h3 class="fontw-6 margin-bottom-1">Yamaha Ramarayo Karawang</h3>
+                                <div class="d-flex">
+                                    <div class="margin-right-6">
+                                        <i class="bi bi-star-fill margin-right-2"></i>4.3
+                                    </div>
+                                    <div>
+                                        <a href="" class="text-decoration-none black">3 Ulasan</a>
+                                    </div>
+                                </div>
+                                <p>Bengkel Sepeda Motor</p>
+                                <div class="row align-items-center margin-bottom-1">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-geo-alt-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            Jl. Surotokunto No.38, Adiarsa Tim., Kec. Karawang Tim., Karawang, Jawa Barat 41314
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-2 col-xl-1 text-center">
+                                        <i class="bi bi-telephone-fill fonts-8"></i>
+                                    </div>
+                                    <div class="col-10 col-xl-11">
+                                        <p class="mb-0">
+                                            0812-9052-2188
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="width-40p text-center text-lg-end margin-bottom-3">
+                                <button type="submit" class="btn btn-green rounded-pill d-inline-block width-28p width-lg-12p">Pilih</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <section id="footer"></section>
+    
+    <!-- Script -->
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/jquery/jquery-3.6.1.js"></script>
+    <script src="./public/js/jquery/jquery.mousewheel.js"></script>
+    <script src="./public/js/owlcarousel/owl.carousel.js"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ORTO - Servis Mudah Dalam Genggaman</title>
+    <link rel="icon" href="./public/images/logo/orto-square.png" type="image/icon type">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./public/css/owlcarousel/owl.theme.default.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/library/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-sm.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-md.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-lg.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xl.min.css">
+    <link rel="stylesheet" href="./public/css/library/icaruslib-xxl.min.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="sticky-top" id="navbar-servis">              
+    </section>
+
+    <form action="/ringkasan.html">
+        <!-- Keluhan -->
+        <section>
+            <div class="container margin-top-5 border-bottom">
+                <h1 class="fontw-6 margin-bottom-2">Bengkel Neskar</h1>
+                <h2 class="fontw-6 margin-bottom-2">Estimasi Biaya :</h2>
+                <div class="margin-bottom-2">
+                    <label for="keluhan" class="form-label fontw-6 fonts-4">Keluhan</label>
+                    <input type="text" class="form-control" id="keluhan" placeholder="Keluhan Anda" value="Penggantian Oli dan Servis Rutin">
+                </div>
+                <div class="margin-bottom-5">
+                    <label for="detilkeluhan" class="form-label fontw-6 fonts-4">Detail keluhan</label>
+                    <textarea class="form-control height-24" placeholder="Detil keluhan anda" id="detilkeluhan">Penggantian Oli dengan spesifikasi 10w - 40 dan juga melakukan servis rutin</textarea>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Barang -->
+        <section>
+            <div class="container margin-top-5 border-bottom">
+                <div class="row position-relative overflow-x-hidden width-40p margin-bottom-4 margin-lg-bottom-8">
+                    <div class="col-4 col-md-3 col-lg-2 ">
+                        <img src="./public/images/ui/oil.jpg" alt="" class="width-40p ratio ratio-1x1">
+                    </div>
+                    <div class="col-8 col-md-7 col-lg-10">
+                        <h6 class="margin-bottom-1 fontw-6 fonts-4 fonts-sm-5">Oli Motor Oil</h6>
+                        <p class="margin-bottom-1 margin-lg-bottom-2 margin-xxl-bottom-4">Motor Oil Power Scooter 10w - 40</p>
+                        <p class="mb-0 fontw-6">Rp. 55.000</p>
+                    </div>
+                    <div class="position-absolute col-sm-12 translate-middle start-40p top-0 width-12 ratio ratio-1x1">
+                        <input type="text" class="green fontw-7 fonts-4 fonts-md-6 fonts-lg-8 bg-none border-0 text-center mx-auto padding-0" value="1">
+                    </div>
+                </div>
+                <div class="row position-relative overflow-x-hidden width-40p margin-bottom-4 margin-lg-bottom-8">
+                    <div class="col-4 col-md-3 col-lg-2 ">
+                        <img src="./public/images/ui/coolant.jpg" alt="" class="width-40p ratio ratio-1x1">
+                    </div>
+                    <div class="col-8 col-md-7 col-lg-10">
+                        <h6 class="margin-bottom-1 fontw-6 fonts-4 fonts-sm-5">Top 1 Coolant</h6>
+                        <p class="margin-bottom-1 margin-lg-bottom-2 margin-xxl-bottom-4">Cairan Coolant Pendingin Radiator Motor</p>
+                        <p class="mb-0 fontw-6">Rp. 45.000</p>
+                    </div>
+                    <div class="position-absolute col-sm-12 translate-middle start-40p top-0 width-12 ratio ratio-1x1">
+                        <input type="text" class="green fontw-7 fonts-4 fonts-md-6 fonts-lg-8 bg-none border-0 text-center mx-auto padding-0" value="1">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Estimasi -->
+        <section>
+            <div class="container margin-top-5 border-bottom">
+                <div class="row margin-bottom-2">
+                    <div class="col-8">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Oli Motor Oil</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 55.000</p>
+                    </div>
+                </div>
+                <div class="row margin-bottom-2">
+                    <div class="col-8">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Air Radiator</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 45.000</p>
+                    </div>
+                </div>
+                <div class="row margin-bottom-2">
+                    <div class="col-8">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Jasa Penggantian</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Rp. 10.000</p>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="container margin-top-5 margin-bottom-10">
+                <div class="row margin-bottom-2">
+                    <div class="col-8">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Metode Pembayaran</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Bayar Ditempat</p>
+                    </div>
+                </div>
+                <div class="row margin-bottom-6">
+                    <div class="col-8">
+                        <p class="fontw-6 fonts-4 fonts-md-5 fonts-xl-6 mb-0">Estimasi Biaya :</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <p class="fontw-7 fonts-5 fonts-md-6 fonts-xl-7 mb-0 green">Rp. 110.000</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-green rounded-pill width-15p width-sm-10p width-md-7p width-lg-6p fontw-6">Pesan</button>
+                </div>
+            </div>
+        </section>
+    </form>
+
+    <!-- Footer -->
+    <section id="footer"></section>
+    
+    <!-- Script -->
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/jquery/jquery-3.6.1.js"></script>
+    <script src="./public/js/jquery/jquery.mousewheel.js"></script>
+    <script src="./public/js/owlcarousel/owl.carousel.js"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+</html>
